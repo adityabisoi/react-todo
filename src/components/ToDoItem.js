@@ -8,7 +8,7 @@ function TodoItem(props) {
                 checked={props.item.completed} 
                 onChange={() => props.handleChange(props.item.id)}
             />
-            <p>{props.item.text}</p>
+            <p style={{color:props.item.completed?"grey":""}}>{props.item.text}</p>
         </div>
     )
 }
